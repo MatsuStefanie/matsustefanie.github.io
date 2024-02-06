@@ -1,0 +1,5 @@
+.custom-primary-bg {
+  background-color: #C300FF; /* Cor de fundo personalizada */
+  color: #ffffff; /* Cor do texto para contraste */
+  padding: 1rem; /* Adicione preenchimento para destacar o texto */
+}
