@@ -29,12 +29,8 @@
             <p>Brasileira</p>
           </div>
           <div class="col-md-auto text-center">
-            <i class="fas fa-birthday-cake fa-2x mb-3 text-success"></i>
-            <p id="resultado">24 anos</p>
-          </div>
-          <div class="col-md-auto text-center">
             <i class="fas fa-theater-masks fa-2x mb-3 text-warning"></i>
-            <p>Entusiasta de Cosplay</p>
+            <p>Cosplayer</p>
           </div>
           <div class="col-md-auto text-center">
             <i class="fas fa-rainbow fa-2x mb-3 text-info"></i>
@@ -50,12 +46,12 @@
 
     <div class="row mt-4">
       <div class="col-md-4">
-        <h2 class="fs-3">Redes Sociais</h2>
+        <h2 class="fs-3">Contatos</h2>
         <div class="alert alert-dark" role="alert">
+          <p><a href="https://github.com/MatsuStefanie" class="alert-link" target="_blank">GitHub - Stefanie Vidal</a></p>
           <p><a href="https://www.instagram.com/matsustefanie/" class="alert-link" target="_blank">Instagram - @matsustefanie</a></p>
           <p><a href="https://www.linkedin.com/in/stefaniedasilvasouzamatsu/" class="alert-link" target="_blank">LinkedIn - Stefanie Vidal</a></p>
-          <p class="text-dark">stefaniesouzavidal@gmail.com - E-mail</p>
-          <p class="text-dark">stefanie.vidal@fatec.sp.gov.br - E-mail</p>
+          <p class="text-dark">E-mail - stefaniesouzavidal@gmail.com</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -69,29 +65,29 @@
       <div class="col-md-4">
         <h2 class="fs-3">Tecnologias</h2>
         <div class="alert alert-dark" role="alert">
-          <span class="badge rounded-pill text-bg-info">Angular 8</span>
-          <span class="badge rounded-pill text-bg-info">Angular Material</span>
-          <span class="badge rounded-pill text-bg-info">ASP</span>
-          <span class="badge rounded-pill text-bg-warning">Confluence</span>
           <span class="badge rounded-pill text-bg-success">Desenvolvimento de API</span>
-          <span class="badge rounded-pill text-bg-danger">GitFlow</span>
-          <span class="badge rounded-pill text-bg-light">Gestão de Contas</span>
-          <span class="badge rounded-pill text-bg-light">Gestão de Equipes</span>
           <span class="badge rounded-pill text-bg-success">Injeção de dependência</span>
           <span class="badge rounded-pill text-bg-success">Java</span>
           <span class="badge rounded-pill text-bg-success">JPA - JDBC</span>
           <span class="badge rounded-pill text-bg-success">Kotlin</span>
-          <span class="badge rounded-pill text-bg-light">Monitoramento de Saúde de Sistemas</span>
-          <span class="badge rounded-pill text-bg-primary">MongoDB</span>
-          <span class="badge rounded-pill text-bg-dark">Mockito</span>
-          <span class="badge rounded-pill text-bg-warning">Plataforma Sharepoint</span>
-          <span class="badge rounded-pill text-bg-light">Processo ITIL</span>
-          <span class="badge rounded-pill text-bg-light">SCRUM</span>
-          <span class="badge rounded-pill text-bg-info">Sharepoint</span>
           <span class="badge rounded-pill text-bg-success">Solid</span>
           <span class="badge rounded-pill text-bg-success">Spring Framework</span>
+          <span class="badge rounded-pill text-bg-dark">Mockito</span>
+          <span class="badge rounded-pill text-bg-primary">MongoDB</span>
           <span class="badge rounded-pill text-bg-primary">SQL Server</span>
+          <span class="badge rounded-pill text-bg-danger">GitFlow</span>
+          <span class="badge rounded-pill text-bg-info">Angular 8</span>
+          <span class="badge rounded-pill text-bg-info">Angular Material</span>
+          <span class="badge rounded-pill text-bg-info">ASP</span>
+          <span class="badge rounded-pill text-bg-info">Sharepoint</span>
           <span class="badge rounded-pill text-bg-info">Typescript</span>
+          <span class="badge rounded-pill text-bg-light">Gestão de Contas</span>
+          <span class="badge rounded-pill text-bg-light">Gestão de Equipes</span>
+          <span class="badge rounded-pill text-bg-light">Monitoramento de Saúde de Sistemas</span>
+          <span class="badge rounded-pill text-bg-light">Processo ITIL</span>
+          <span class="badge rounded-pill text-bg-light">SCRUM</span>
+          <span class="badge rounded-pill text-bg-warning">Confluence</span>
+          <span class="badge rounded-pill text-bg-warning">Plataforma Sharepoint</span>
         </div>
       </div>
     </div>
@@ -240,13 +236,6 @@
   </div>
 
   <script>
-    const dataNascimento = new Date('1999-11-20');
-    const dataAtual = new Date();
-    const diferenca = dataAtual - dataNascimento;
-    
-    const idade = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365));
-    document.getElementById('resultado').innerText = `${idade} anos`;
-
     function getRepositories(username) {
       fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
@@ -317,4 +306,5 @@
     getRepositories('matsustefanie');
   </script>
 </body>
+
 </html>
